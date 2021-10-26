@@ -23,5 +23,11 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: publish artifacts
-      run: dotnet publish
+    - name: generate temp file
+      run: echo 'zebra' > /tmp/a.out
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.2.4
+      with:
+        name: my-artifact
+        path: /tmp/a.out
+
