@@ -33,5 +33,5 @@ jobs:
       uses: actions/upload-artifact@v2.2.4
       with:
         name: gateway_artifact_test
-        path: $GITHUB_WORKSPACE/bin/**/*
+        path: /home/runner/work/test1/test1/bin/Debug/
 
