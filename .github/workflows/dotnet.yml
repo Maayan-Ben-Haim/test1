@@ -25,6 +25,8 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     - name: generate temp file
       run: echo 'zebra' > /tmp/a.out
+    - name: ls bin
+      run: ls -ls $GITHUB_WORKSPACE/
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.2.4
       with:
