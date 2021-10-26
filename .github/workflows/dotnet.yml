@@ -26,7 +26,7 @@ jobs:
     - name: generate temp file
       run: echo 'zebra' > /tmp/a.out
     - name: ls bin
-      run: ls -ls $GITHUB_WORKSPACE/
+      run: ls -ls $GITHUB_WORKSPACE/bin
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.2.4
       with:
