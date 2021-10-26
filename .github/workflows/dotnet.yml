@@ -24,7 +24,7 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal   
     - name: ls bin
-      run: ls -ls $GITHUB_WORKSPACE/bin/Debug
+      run: ls -ls $GITHUB_WORKSPACE/bin/Debug/*
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.2.4
       with:
